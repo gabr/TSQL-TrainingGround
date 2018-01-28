@@ -1,0 +1,4 @@
+> :setvar SQLCMDMAXVARTYPEWIDTH 30
+> :setvar SQLCMDMAXFIXEDTYPEWIDTH 30
+> SELECT * from my_table
+> go

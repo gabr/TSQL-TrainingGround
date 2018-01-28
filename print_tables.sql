@@ -1,0 +1,9 @@
+USE Northwind
+GO
+
+SELECT
+    *
+FROM
+  INFORMATION_SCHEMA.TABLES
+GO
+
