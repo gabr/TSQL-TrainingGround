@@ -1,0 +1,15 @@
+DECLARE @fakeDate VARCHAR(10) = 'iamnotadate'
+DECLARE @realDate VARCHAR(10) = '13.01.2017'
+DECLARE @sampleText VARCHAR(10) = '123456'
+
+SELECT TRY_PARSE(@fakeDate AS DATE)
+SELECT TRY_PARSE(@realDate AS DATE)
+SELECT TRY_PARSE(@realDate AS DATE USING 'Fr-FR')
+
+SELECT TRY_CONVERT(INT, @sampleText)
+SELECT TRY_CONVERT(DATETIME, @sampleText)
+SELECT TRY_CONVERT(DATETIME, @realDate, 111) -- 111 is style format
+
+SELECT CAST(@sampleText as INT)
+SELECT CAST(@realDate as DATETIME)
+
