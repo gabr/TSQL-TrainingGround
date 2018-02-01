@@ -13,3 +13,5 @@ SELECT TRY_CONVERT(DATETIME, @realDate, 111) -- 111 is style format
 SELECT CAST(@sampleText as INT)
 SELECT CAST(@realDate as DATETIME)
 
+SELECT CONVERT(VARCHAR(20), GETDATE(), 108)
+
